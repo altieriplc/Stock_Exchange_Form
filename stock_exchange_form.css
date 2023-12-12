@@ -1,0 +1,38 @@
+body {
+    
+    background-color: rgba(128, 128, 128, 0.288);
+    margin-left: 500px;
+    padding: 10px;
+    position: center;
+    
+}
+
+#titulopapel {
+    border-bottom: 1000px;
+}
+
+.nomesenha {
+    text-decoration: underline;
+}
+
+#tipoentrada {
+    text-decoration: underline;
+}
+
+#testetopo {
+    border: 1px;
+    margin: 0px;
+    padding: 10px;
+    background-color: brown;
+    border-radius: 8px;
+    color: white;
+    display: inline-block;
+}
+
+
+#confirab3 {
+    width: 800px;
+    color:black;
+    
+    
+}  

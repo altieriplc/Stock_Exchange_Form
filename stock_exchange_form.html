@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formularioacoes.css">
+
+</head>
+
+<body>
+
+    <nav>
+    </nav>
+    <br>
+    <main>
+        <header>
+            <h1 style="text-decoration: underline;" id="testetopo">Formulário de Ações</h1>
+            
+        </header>
+        <form action="">
+            <label for="papeis" id="titulopapel">Escolha o papel desejado</label>
+            <div></div>
+            <select id="papeis" name="papeis" required>
+                <option value="">Selecione o papel</option>
+                <option value="vale3">VALE3</option>
+                <option value="taee11">TAEE11</option>
+                <option value="unip6">UNIP6</option>
+                <option value="wege3">WEGE3</option>
+            </select>
+
+            <div></div>
+            <br>
+            <section>
+                <label for="motivooperacao">Descreva o motivo da sua entrada</label>
+                <div></div>
+                <textarea name="motivooperacao" id="motivooperacao" cols="30" rows="10" placeholder="Digite aqui"
+                    required></textarea>
+                <div></div>
+
+                <label for="compravenda" id="tipoentrada">Tipo de Entrada</label>
+                <div></div>
+                <input type="radio" id="compravenda" name="compravenda" value="compra" required>
+                Compra
+                <input type="radio" id="compravenda" name="compravenda" value="venda" required>
+                Venda
+            </section>
+
+            <br>
+            <section>
+                <label for="nome" class="nomesenha">Nome</label>
+                <div></div>
+                <input type="text" id="nome" required>
+                <div></div>
+                <label for="senha" class="nomesenha">Senha</label>
+                <div></div>
+                <input type="password" id="senha" required>
+                <div></div>
+                <br>
+                <button type="submit">Enviar</button>
+            </section>
+
+            <p id="confirab3">Confira as cotações atuais:</p>
+
+            <a href="https://b3.com.br/pt_br/institucional" target="_blank">www.b3.com.br</a>
+
+
+        </form>
+
+
+
+
+
+
+
+
+    </main>
+
+</body>
+
+</html>
