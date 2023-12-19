@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="formularioacoes.css">
+    <title>Stock Form</title>
+    <link rel="stylesheet" href="stock_exchange_form.css">
 
 </head>
 
@@ -32,7 +32,12 @@
 
             <div></div>
             <br>
+            <label for="PrecoAtivo">Preço do Ativo</label>
+            <input type="number" min="0" name="PrecoAtivo" id="precoAtivoId">
+            <br>
+            
             <section>
+                <br>
                 <label for="motivooperacao">Descreva o motivo da sua entrada</label>
                 <div></div>
                 <textarea name="motivooperacao" id="motivooperacao" cols="30" rows="10" placeholder="Digite aqui"
@@ -41,9 +46,9 @@
 
                 <label for="compravenda" id="tipoentrada">Tipo de Entrada</label>
                 <div></div>
-                <input type="radio" id="compravenda" name="compravenda" value="compra" required>
+                <input type="radio" id="compravendac" name="compravenda" value="compra" required>
                 Compra
-                <input type="radio" id="compravenda" name="compravenda" value="venda" required>
+                <input type="radio" id="compravendav" name="compravenda" value="venda" required>
                 Venda
             </section>
 
@@ -76,7 +81,7 @@
 
 
     </main>
-
+    <script src="stock_exchange_form.js"></script>
 </body>
 
 </html>
