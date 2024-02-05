@@ -1,38 +1,77 @@
 body {
     
     background-color: rgba(128, 128, 128, 0.288);
-    margin-left: 500px;
+    
     padding: 10px;
-    position: center;
+    text-align: center;
     
 }
 
+#testetopo {
+    border: 1px;
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(42, 54, 165);
+    border-radius: 8px;
+    color: white;
+    display: inline-block;
+}
+
+#form {
+    width: 20%; /* Ajusta a largura do formulário */
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+    border: 2px solid #333;
+    border-radius: var(--radius-1);
+    padding: 20px; /* Adiciona um espaço interno para melhor aparência */
+    background-color: #bdbaba;
+}
+
+
 #titulopapel {
-    border-bottom: 1000px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+#papeis{
+    border-radius: var(--radius-1);
+}
+
+#precoAtivoId{
+    border-radius: var(--radius-1);
 }
 
 .nomesenha {
     text-decoration: underline;
 }
 
+.nomesenhaInput{
+    border-radius: var(--radius-1);
+    
+}
+
 #tipoentrada {
     text-decoration: underline;
 }
 
-#testetopo {
-    border: 1px;
-    margin: 0px;
-    padding: 10px;
-    background-color: brown;
-    border-radius: 8px;
-    color: white;
-    display: inline-block;
-}
-
 
 #confirab3 {
-    width: 800px;
     color:black;
-    
-    
 }  
+
+
+#linkB3 {
+    color: black;
+    
+}
+#linkB3:link {
+    color: blue; /* Cor do link não visitado */
+}
+
+#linkB3:visited {
+    color:black /* Cor do link visitado */
+}
+
+#linkB3:hover {
+    color: white; /* Cor do link quando o mouse está sobre ele */
+}
+
