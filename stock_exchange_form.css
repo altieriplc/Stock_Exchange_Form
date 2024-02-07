@@ -75,3 +75,7 @@ body {
     color: white; /* Cor do link quando o mouse está sobre ele */
 }
 
+#motivooperacao{
+    width: 100%;
+    height: 200px; /* Defina uma altura fixa ou use % também */
+}
