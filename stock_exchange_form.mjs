@@ -1,24 +1,39 @@
-import { papeis } from "./stock_exchange_form_array.mjs"
+import { papeis } from "./stock_exchange_form_array.mjs"//importando array
 
 
+let papeisEsc = document.querySelector("#papeis")//variável para capturar select
+let valorDigitado = document.querySelector('#precoAtivoId')//variável para capturar input
 
-let papeisEsc = document.querySelector("#papeis")
+valorDigitado.addEventListener("input", function() {// Adiciona um ouvinte de evento para o ("input") no elemento de ID "valorDigitado"
 
-papeisEsc.addEventListener("change", function(){
-    let selectedIndex = papeisEsc.selectedIndex;//selectedIndex é uma propriedade dos elementos <select> em JavaScript. Ela retorna o índice do elemento selecionado dentro do elemento <select>
+    let novoValor = parseFloat(valorDigitado.value);// Converte o valor do  "valorDigitado" para um número decimal
+
+    function addValue(novoValor){// Define a função "addValue" para adicionar um valor aos elementos do array "papeis"
+        if(novoValor === 0){
+            return "Preencha um valor"
+        }else if(!isNaN(parseFloat(novoValor)) && isFinite(novoValor)){// Verifica se o novo valor é um número válido e finito
+            for(let i = 0; i < papeis.length; i++){// Itera sobre cada elemento do array "papeis" e define o valor para o novo valor fornecido
+                papeis[i].valor = novoValor
+            }
+        } else{
+            console.log('Informe apenas numero')
+        }
+        
+    };
+    
+    addValue(novoValor);// Chama a função "addValue" passando o novo valor como argumento
+});
+
+
+//----------------IMPRESSÃO DO ÍNDICE ESCOLHIDO DO ARRAY NO CONSOLE------------------------------------
+
+papeisEsc.addEventListener("change", function(){//função de "change para select"
+    let selectedIndex = papeisEsc.selectedIndex;//selectedIndex é uma propriedade dos elementos <select> em JavaScript. Ela retorna o  índice do elemento selecionado dentro do elemento <select>
     let papelSelecionado = papeis[selectedIndex];
     console.log(papelSelecionado);
 });
 
-//console.log(papeisEsc)
-
-
-
-
-
-
-
-
+//-----------------------------------------------------------------------------------------------------
 
 
 export {papeis}
