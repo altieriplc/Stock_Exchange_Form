@@ -30,22 +30,32 @@ body {
 #titulopapel {
     margin-top: 20px;
     padding-bottom: 20px;
+    width: 100%;
+
 }
 
 #papeis{
     border-radius: var(--radius-1);
+    width: 100%;
+
 }
 
 #precoAtivoId{
     border-radius: var(--radius-1);
+    width: 100%;
+
 }
 
 .nomesenha {
     text-decoration: underline;
+    width: 100%;
+
 }
 
 .nomesenhaInput{
     border-radius: var(--radius-1);
+    width: 100%;
+
     
 }
 
@@ -61,7 +71,8 @@ body {
 
 #linkB3 {
     color: black;
-    
+    word-wrap: break-word;
+    white-space: normal; /* Garante que o link possa ser dividido em várias linhas */
 }
 #linkB3:link {
     color: blue; /* Cor do link não visitado */
