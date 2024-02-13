@@ -6,17 +6,17 @@ let valorDigitado = document.querySelector('#precoAtivoId')//variável para capt
 
 valorDigitado.addEventListener("input", function() {// Adiciona um ouvinte de evento para o ("input") no elemento de ID "valorDigitado"
 
-    let novoValor = parseFloat(valorDigitado.value);// Converte o valor do  "valorDigitado" para um número decimal
-
+    let novoValor = parseFloat(valorDigitado.valeu);// Converte o valor do  "valorDigitado" para um número decimal
+    
     function addValue(novoValor){// Define a função "addValue" para adicionar um valor aos elementos do array "papeis"
-        if(novoValor === 0){
+        if(novoValor === ''){
             return "Preencha um valor"
         }else if(!isNaN(parseFloat(novoValor)) && isFinite(novoValor)){// Verifica se o novo valor é um número válido e finito
             for(let i = 0; i < papeis.length; i++){// Itera sobre cada elemento do array "papeis" e define o valor para o novo valor fornecido
                 papeis[i].valor = novoValor
             }
         } else{
-            console.log('Informe apenas numero')
+            window.alert('Informe apenas números')
         }
         
     };
