@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stock Form</title>
     <link rel="stylesheet" href="stock_exchange_form.css">
+    <link rel="stylesheet" href="stock_exchange_form_global_styles.css">
 
 </head>
 
@@ -19,17 +20,17 @@
             <h1 style="text-decoration: underline;" id="testetopo">Formulário de Ações</h1>
             
         </header>
-        <form action="">
+        <form action="" id="form">
             <label for="papeis" id="titulopapel">Escolha o papel desejado</label>
             <div></div>
-            <select id="papeis" name="papeis" required>
+            <select id="papeis" name="papeisn" required>
                 <option value="">Selecione o papel</option>
                 <option value="vale3">VALE3</option>
                 <option value="taee11">TAEE11</option>
                 <option value="unip6">UNIP6</option>
                 <option value="wege3">WEGE3</option>
             </select>
-
+            
             <div></div>
             <br>
             <label for="PrecoAtivo">Preço do Ativo</label>
@@ -56,11 +57,11 @@
             <section>
                 <label for="nome" class="nomesenha">Nome</label>
                 <div></div>
-                <input type="text" id="nome" required>
+                <input type="text" id="nome" class="nomesenhaInput" required >
                 <div></div>
                 <label for="senha" class="nomesenha">Senha</label>
                 <div></div>
-                <input type="password" id="senha" required>
+                <input type="password" id="senha" class="nomesenhaInput" required >
                 <div></div>
                 <br>
                 <button type="submit">Enviar</button>
@@ -68,7 +69,7 @@
 
             <p id="confirab3">Confira as cotações atuais:</p>
 
-            <a href="https://b3.com.br/pt_br/institucional" target="_blank">www.b3.com.br</a>
+            <a href="https://b3.com.br/pt_br/institucional" target="_blank" id="linkB3">www.b3.com.br</a>
 
 
         </form>
@@ -81,7 +82,8 @@
 
 
     </main>
-    <script src="stock_exchange_form.js"></script>
+    <script type="module" src="stock_exchange_form.mjs"></script>
+    <script type="module" src="stock_exchange_form_array.mjs"></script>
 </body>
 
 </html>
